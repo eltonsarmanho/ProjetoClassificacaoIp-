@@ -120,6 +120,7 @@ def runCrossTab(dataframe):
         ax[2].annotate(especies+"("+str(labels)+")", (x, y), fontsize=10, alpha=0.75)
     plt.show()
 
+
 def runAnalisePCA(dataframe):
     samples = dataframe.drop(columns='Especie', axis=1)
     varieties = dataframe['Especie']
