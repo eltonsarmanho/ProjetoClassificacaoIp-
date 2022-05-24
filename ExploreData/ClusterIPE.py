@@ -41,6 +41,7 @@ def readData(name):
     drop_columns = (columns_categorical.drop('Especie'))
     dataset_reduce = dataset.drop(columns=drop_columns,axis=1)
 
+
     print("Dimensionality reduced from {} to {}.".format(dataset.shape[1], dataset_reduce.shape[1]))
     print("Detect missing values.")
     print(dataset_reduce.isna().sum() / len(dataset_reduce))
